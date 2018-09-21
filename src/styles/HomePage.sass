@@ -2,3 +2,43 @@
 	width: 100vw
 	height: 100vh
 	background-color: #555
+
+.hero
+	width: 100vw
+	height: 100vh
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: flex-start
+	background: linear-gradient(#333333 0%, #999999 100%)
+	&__logo
+		height: 100%
+		width: 250px
+		color: #fff
+		border: 2px solid #ad434a
+	header
+		width: 100%
+		max-height: 100px
+		height: 10vh
+		border: 2px solid yellow
+		display: flex
+		align-items: center
+		justify-content: space-between
+		nav
+			flex: 1 1
+			height: 100%
+			background-color: purple
+			display: flex
+			justify-content: flex-end
+			align-items: center
+			.link
+				height: 100%
+				padding: 0 1.2rem
+				width: 200px
+				text-decoration: none
+				color: #fff
+				font:
+					size: 1.2rem
+				&:hover
+					background-color: #444
+			

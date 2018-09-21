@@ -12,6 +12,7 @@ import {
 	Redirect } from 'react-router-dom'
 
 import HomePage from './views/HomePage';
+import ProjectPage from './views/ProjectPage';
 
 import "./styles/theme.sass";
 
@@ -21,11 +22,12 @@ class App extends React.Component {
 
     render() {
 		return (
-			<Router basename={"/storefront"} > 
+			<Router basename={"/portfolio"} > 
 			{/* change the string in basename to "/" for development */}
 				<div className={"page-wrapper"}>
 					<Switch>
 						<Route key={"home"} path={"/"} exact component={HomePage}/>
+						<Route key={"project"} path={"/project"} component={ProjectPage}/>
 						<Redirect from={"*"} to={"/"} />
 					</Switch>
 				</div>	
